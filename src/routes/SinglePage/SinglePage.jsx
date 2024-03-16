@@ -36,7 +36,7 @@ const SinglePage = () => {
             <div className="features">
                 <div className="wrapper">
                     <p className="title">
-                        general
+                        General
                     </p>
                     <div className="listVertical">
                         <div className="feature">

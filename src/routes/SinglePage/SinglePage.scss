@@ -2,13 +2,25 @@
 .singlePage {
   height: 100%;
   display: flex;
-
+  @include md {
+    flex-direction: column;
+    overflow-y: scroll;
+  }
   .details {
     flex: 3;
     height: 100%;
     overflow-y: scroll;
+    @include md {
+      flex: none;
+      height: max-content;
+      margin-bottom: 50px;
+      overflow-y: hidden;
+    }
     .wrapper {
       padding-right: 50px;
+      @include md {
+        padding-right: 20px;
+      }
       .info {
         margin-top: 50px;
         .top {
@@ -71,6 +83,12 @@
     background-color: #fcf5f3;
     height: 100%;
     overflow-y: scroll;
+    @include md {
+      flex: none;
+      height: max-content;
+      padding-bottom: 50px;
+      overflow-y: hidden;
+    }
 
     .wrapper {
       padding: 0 20px;
@@ -81,6 +99,10 @@
       img {
         width: 24px;
         height: 24px;
+        @include md {
+          width: 20px;
+          height: 20px;
+        }
       }
       .title {
         font-weight: bold;
@@ -95,9 +117,15 @@
         .featureText {
           span {
             font-weight: bold;
+            @include md {
+              font-size: 14px;
+            }
           }
           p {
             font-size: 13px;
+            @include md {
+              font-size: 12px;
+            }
           }
         }
       }
@@ -115,6 +143,9 @@
         align-items: center;
         background-color: white;
         padding: 10px;
+        @include lg {
+          font-size: 12px;
+        }
         .size {
           display: flex;
           align-items: center;
