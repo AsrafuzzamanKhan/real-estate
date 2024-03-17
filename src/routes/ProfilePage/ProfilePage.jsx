@@ -1,3 +1,4 @@
+import Chat from '../../components/Chat/Chat'
 import List from '../../components/List/List'
 import './ProfilePage.scss'
 
@@ -22,13 +23,13 @@ const ProfilePage = () => {
                     <List />
                     <div className="title">
                         <h1>Save List</h1>
-
                     </div>
+                    <List />
                 </div>
             </div>
             <div className="chatContainer">
                 <div className="wrapper">
-                    chat
+                    <Chat />
                 </div>
             </div>
         </div>
