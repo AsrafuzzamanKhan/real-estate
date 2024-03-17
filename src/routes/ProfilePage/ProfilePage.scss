@@ -1,0 +1,39 @@
+.profilePage {
+  display: flex;
+  height: 100%;
+  .details {
+    flex: 3;
+    height: 100%;
+    overflow-y: scroll;
+    .wrapper {
+      padding-right: 20px;
+      height: 100%;
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          font-weight: 400;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .chatContainer {
+    flex: 2;
+    height: 100%;
+    background-color: #fcf5f3;
+    .wrapper {
+      padding-left: 20px;
+    }
+  }
+}

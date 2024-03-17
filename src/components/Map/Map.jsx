@@ -7,7 +7,7 @@ import Pin from '../Pin/Pin'
 const Map = ({ items }) => {
     // const position = [51.505, -0.09]
     return (
-        <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className='map'>
+        <MapContainer center={[52.4797, -1.90269]} zoom={13} scrollWheelZoom={false} className='map'>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

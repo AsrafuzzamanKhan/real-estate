@@ -2,6 +2,7 @@
 .singlePage {
   height: 100%;
   display: flex;
+
   @include md {
     flex-direction: column;
     overflow-y: scroll;
